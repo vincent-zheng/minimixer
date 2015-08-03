@@ -1,0 +1,12 @@
+{
+  "name": "minimixer",
+  "version": "1.0.0",
+  "authors": [
+    "vincent-zheng <zhs0518@qq.com>"
+  ],
+  "dependencies": {
+    "minijquery": "https://github.com/vincent-zheng/miniJQuery.git"
+  },
+  "homepage": "https://github.com/vincent-zheng/minimixer",
+  "description": "基于elecron写的模块生成器，用于提供UI界面来精�?自己的库文件，以适合项目�?�?."
+}

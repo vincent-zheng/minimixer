@@ -1,0 +1,9 @@
+<h1>列表</h1>
+<form>
+    <% list.forEach(function(item){ %>
+        <%= '<label><input type="radio" name="test" value="' + item + '">' + item + '</label>' %>
+    <% }); %>
+    
+</form>
+<legend></legend>
+<button class="btn btn-primary" id="next-button">下一步</button>

@@ -1,0 +1,10 @@
+<h1>选择模块</h1>
+<form>
+    <% for(var key in module) { %>
+        <%= '<label><input  type="checkbox" value="' + key + '" checked>' + module[key] + '</label>' %>
+    <% }; %>
+</form>
+
+<legend></legend>
+<button class="btn btn-danger" id="pre-button">上一步</button>
+<button class="btn btn-primary" id="next-button">下一步</button>

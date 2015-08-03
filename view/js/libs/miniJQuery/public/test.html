@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			test
+		</title>
+		<style>
+			.test {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test1">
+			hehe
+		</div>
+		<span id="load"></span>
+		<button id="add">
+			add Class
+		</button>
+		<ul>
+			<li>li0</li>
+			<li>li1</li>
+		</ul>
+		<input id="remove" value="remove" type="button" />
+
+		<div id="testTmpl"></div>
+
+		<script src="dist/minijQuery.js"></script>
+
+		<script type="text/tmpl" id="tmpl1">
+			<div><%=name %></div>
+		</script>
+
+		<script>
+			// var $ = minijQuery;
+			$('#add').bind('click', function () {
+				$('div').addClass('test');
+			});
+			$('#remove').bind('click', function () {
+				$('div').removeClass('test');
+			});
+			$('input[type="button"]').val('remove class');
+            
+//            $.ajax({
+//                url: 'test',
+//                method: 'get',
+//                async: true,
+//                success: function (data) {
+//                    console.log(data);
+//                }
+//            })
+			$.get('test', function (data) {
+				console.log(data);
+			});
+			$.post('test',{
+				test: 'hehe'
+			}, function (data) {
+				console.log(data);
+			});
+			$('#load').load('load.html');
+
+			$('ul li').each(function (index, elem) {
+				console.log($(this).html(index));
+			});
+
+			var tmpl = $('#tmpl1').html();
+			$('#testTmpl').html($.template(tmpl, {
+				name: '傻逼'
+			}));
+		</script>
+	</body>
+</html>
