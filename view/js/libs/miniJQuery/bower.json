@@ -6,12 +6,5 @@
     "vincent-zheng <zhs0518@qq.com>"
   ],
   "main": "dist/minijQuery.min.js",
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "license": "MIT"
 }

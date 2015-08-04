@@ -1,0 +1,16 @@
+{
+  "core": [
+    "src/core.js"
+  ],
+  "modules": {
+    "src/dom/*.js": "dom",
+    "src/event/event.js": "event",
+    "src/tmpl/tmpl.js": "template",
+    "src/ajax/ajax.js": "ajax"
+  },
+  "dependencies": {
+    "src/ajax/ajax.js": [
+      "src/ajax/serialize.js"
+    ]
+  }
+}

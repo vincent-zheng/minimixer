@@ -6,21 +6,13 @@
   ],
   "main": "dist/minijQuery.min.js",
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "_release": "0eb6c3b40f",
+  "_release": "36df97550b",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "0eb6c3b40fd05e580b49cf8159e946565c4a4baa"
+    "commit": "36df97550bb68e4ad44aaa00af8275e08b9ea982"
   },
   "_source": "https://github.com/vincent-zheng/miniJQuery.git",
   "_target": "*",
-  "_originalSource": "https://github.com/vincent-zheng/miniJQuery.git",
-  "_direct": true
+  "_originalSource": "https://github.com/vincent-zheng/miniJQuery.git"
 }

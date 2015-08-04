@@ -53,15 +53,31 @@
 		}
 		return this.get().innerHTML;
 	};
-	
+
 	minijquery.fn.append = function (html) {
-		if (typeof html !== 'undefined') {
+		function appendToDom (dom) {
+			console.log(dom);
 			for (var i = 0; i < this.getLength(); ++i) {
-				this.get(i).innerHTML += html;
+				this.get(i).appendChild(dom);
 			}
 		}
-		return this.get().innerHTML;
-	};
+		if (typeof html === 'string') {
+			var dom = document.createElement('div');
+			dom.innerHTML = html;
+			for (var i = 0; i < dom.childNodes.length; ++i) {
+				appendToDom.call(this, dom.childNodes[i]);
+			}
+		}
+	}
+
+	//minijquery.fn.append = function (html) {
+	//	if (typeof html !== 'undefined') {
+	//		for (var i = 0; i < this.getLength(); ++i) {
+	//			this.get(i).innerHTML += html;
+	//		}
+	//	}
+	//	return this.get().innerHTML;
+	//};
 
 	minijquery.fn.each = function (callback) {
 		this.context.forEach(function (item, index) {
